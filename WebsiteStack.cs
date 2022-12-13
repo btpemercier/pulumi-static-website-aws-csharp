@@ -43,7 +43,7 @@ class WebsiteStack : Stack
         }
 
         BucketName = bucket.BucketName;
-        BucketEndpoint = Output.Format($"https://{bucket.WebsiteEndpoint}");
+        BucketEndpoint = Output.Format($"http://{bucket.WebsiteEndpoint}");
         Readme = Output.Create(File.ReadAllText("./Pulumi.README.md"));
     }
 }
