@@ -1,0 +1,6 @@
+config:
+  aws:region: eu-west-1
+  pulumi:template: static-website-aws-csharp
+  static-website-aws-csharp:errorDocument: error.html
+  static-website-aws-csharp:indexDocument: index.html
+  static-website-aws-csharp:path: ./www
